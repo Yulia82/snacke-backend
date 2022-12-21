@@ -18,7 +18,7 @@ router.get("/record", controllerWrapper(getRecordPlayer))
 
 router.get("/:id", controllerWrapper(getPlayerById))
 
-router.patch("/:id", controllerWrapper(updatePoints))
+router.patch("/points/:id", controllerWrapper(updatePoints))
 
 router.delete("/:id", controllerWrapper(deletePlayer))
 
